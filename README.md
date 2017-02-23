@@ -20,11 +20,17 @@ References
 | Destruction of device firmware | 8 | 2 | Device could be passed bad parameters have the software damaged. Unknown at this time if it can be flashed with new firmware. |
 | Power Surge | 8 | 3 | Device could be destroyed with  a powersurge. We must insure that the PLC is connected to the correct power supply and that the PLC is connected to a surge protector. |
 | Electrocution | 9 | 9 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device |
+
 <b>Application Requirements</b>
 
 - Users Stories
+  1. As a programmer/engineer, I want to access the controller to download a new program.
+  2. As a programmer/engineer, I want to access the controller to update hardware settings.
+  3. As a maintenance technician, I want to have physical access to wire in new IO hardware.
+  4. As a non-technical employee, I want to want to use a touch screen to interact with the controller to get the current status of program outputs.
+  5. TBD
 
-- Use Cases
+- Use-Misuse Diagram
 
 <b>Resources/Technology Needed</b>
 
