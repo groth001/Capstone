@@ -24,7 +24,7 @@ References
 
 |Resource  | Dr. Hale needed? | Investigating Team member | Description |
 |----------|------------------|---------------------------|-------------|
-|Click PLC | No | Gary | The PLC that will be investigated. |
+|Click C0-10DD1E-D PLC | No | Gary | The PLC that will be investigated. |
 |24v Power Cord | No | Gary | A cord to wire into the PLC to provide power |
 |Click Programming Software | No | Gary | The programming software to configure and interact with the Click PLC |
 |Windows 7 Virtual Machine | No | Gary | The virtual environment to host the programming software |
