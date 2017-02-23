@@ -24,10 +24,10 @@ References
 <b>Application Requirements</b>
 
 - Users Stories
-  1. As a programmer/engineer, I want to access the controller to download a new program.
-  2. As a programmer/engineer, I want to access the controller to update hardware settings.
+  1. As a programmer/engineer, I want to remote access the controller to download a new program.
+  2. As a programmer/engineer, I want to remote access the controller to update hardware settings.
   3. As a maintenance technician, I want to have physical access to wire in new IO hardware.
-  4. As a non-technical employee, I want to want to use a touch screen to interact with the controller to get the current status of program outputs.
+  4. As a non-technical employee, I want to want to use a touch screen to interact with the program on the controller.
   5. TBD
 
 - Use-Misuse Diagram
