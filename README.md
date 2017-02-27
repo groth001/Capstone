@@ -10,7 +10,7 @@ References
 [2]
 
 <b>Proposed Project Timeline</b>
-
+![Alt text](/gantChart.PNG?raw=true "Project Timeline")
 <b>Project-oriented Risk List</b>
 
 |Risk name (value)  | Impact     | Likelihood | Description |
