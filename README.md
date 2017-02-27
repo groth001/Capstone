@@ -1,8 +1,7 @@
 
 # PLC Hacking Capstone Project
 
-<b>Executive Project Summary</b>
-
+<b>Executive Project Summary</b><br>
 This project consists of developing attacks on a programmable logic controller, a device used to control a process in Supervisory Control and Data Acquistion (SCADA) systems. Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by AutomationDirect. Intelligence reports in the past few years have indicated that attacks on SCADA systems are continuing to increase [1]. These systems represent functions of critical infrastructure for a nation that citizens directly depend on. The goal of these attacks is typically to cause physical damage by compromising the availability of the system. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Any successful attacks and knowledge gained could be integrated into the new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals. Any serious vulnerabilities should be reported to the vendor.
 
 References<br>
@@ -40,11 +39,11 @@ References<br>
   As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
   Acceptance Criteria:
   
- - User Story 5<br>
-   As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
-   Acceptance Criteria:
+- User Story 5<br>
+  As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
+  Acceptance Criteria:
 
-- Use-Misuse Diagram
+- Use-Misuse Diagram<br>
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
 
 <b>Resources/Technology Needed</b>
@@ -54,9 +53,9 @@ https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff
 |Click C0-10DD1E-D PLC | No | Gary | The PLC that will be investigated. |
 |24v Power Cord | No | Gary | A cord to wire into the PLC to provide power |
 |Click Programming Software | No | Gary | The programming software to configure and interact with the Click PLC |
+|Click HMI Software| No | Gary | The HMI creation software to interact with the Click PLC |
 |Windows 7 Virtual Machine | No | Gary | The virtual environment to host the programming software |
 |Kali Linux Virtual Machine| No | Gary | The virtual environment from which to launch attack scripts |
 
-<b>Trello Board</b>
-
+<b>Trello Board</b><br>
 https://trello.com/b/l3p1jstX/project-requirement-elicitation
