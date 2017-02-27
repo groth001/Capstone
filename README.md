@@ -5,8 +5,8 @@
 
 This project consists of developing attacks on a programmable logic controller, a device used to control a process in Supervisory Control and Data Acquistion (SCADA) systems. Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by AutomationDirect. Intelligence reports in the past few years have indicated that attacks on SCADA systems are continuing to increase [1]. These systems represent functions of critical infrastructure for a nation that citizens directly depend on. The goal of these attacks is typically to cause physical damage by compromising the availability of the system. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Any successful attacks and knowledge gained could be integrated into the new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals. Any serious vulnerabilities should be reported to the vendor.
 
-References
-[1] https://securityintelligence.com/news/annual-threat-report-pos-https-and-scada-attacks-on-the-rise/
+References<br>
+[1] https://securityintelligence.com/news/annual-threat-report-pos-https-and-scada-attacks-on-the-rise/ <br>
 [2] https://ics-cert.us-cert.gov/alerts/IR-ALERT-H-16-056-01
 
 <b>Proposed Project Timeline</b>
@@ -24,12 +24,25 @@ References
 
 <b>Application Requirements</b>
 
-- Users Stories
-  1. As a programmer/engineer, I want to remote access the controller to download a new program.
-  2. As a programmer/engineer, I want to remote access the controller to update hardware settings.
-  3. As a maintenance technician, I want to have physical access to wire in new IO hardware.
-  4. As a non-technical employee, I want to want to use a touch screen to interact with the program on the controller.
-  5. TBD
+- User Story 1<br>
+  As a programmer/engineer, I want to remote access the controller to download a new program.<br>
+  Acceptance Criteria: 
+
+- User Story 2<br>
+  As a programmer/engineer, I want to remote access the controller to update hardware settings.<br>
+  Acceptance Criteria:
+
+- User Story 3<br>
+  As a programmer/engineer, I want to remote access the controller to update the system time.<br>
+  Acceptance Criteria:
+  
+- User Story 4<br>
+  As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
+  Acceptance Criteria:
+  
+ - User Story 5<br>
+   As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
+   Acceptance Criteria:
 
 - Use-Misuse Diagram
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
