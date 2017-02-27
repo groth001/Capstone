@@ -32,6 +32,7 @@ References
   5. TBD
 
 - Use-Misuse Diagram
+https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
 
 <b>Resources/Technology Needed</b>
 
