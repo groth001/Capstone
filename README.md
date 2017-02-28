@@ -28,10 +28,10 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 |Risk name (value)  | Impact     | Likelihood | Description |
 |-------------------|------------|------------|-------------|
 |Destruction of device firmware(16) | 8 | 2 | Device could be passed bad parameters that damages the firmware. Unknown at this time if it can be flashed with new firmware. |
-| Electrocution(18) | 9 | 2 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device |
+| Electrocution(18) | 9 | 2 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device. |
 | Power Surge(24) | 8 | 3 | Device could be destroyed with  a powersurge. We must ensure that the PLC is connected to the correct power supply and that the PLC is connected to a surge protector. |
-| Dropping the device(24) | 8 | 3 | Device could be dropped and damaged. Mitigation is the design and building of some display to protect the device |
-| Theft of the PLC(32) | 8 | 4 | The device could be stolen if not secured. Mitigation controls include securing the device in the SCADA lab or in STEAL3 |
+| Dropping the device(24) | 8 | 3 | Device could be dropped and damaged. Mitigation is the design and building of some display to protect the device. |
+| Theft of the PLC(32) | 8 | 4 | The device could be stolen if not secured. Mitigation controls include securing the device in the SCADA lab or in STEAL3. |
 
 
 ## Application Requirements
@@ -71,7 +71,7 @@ https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff
 
 |Resource  | Dr. Hale needed? | Investigating Team member | Description |
 |----------|------------------|---------------------------|-------------|
-|Click C0-10DD1E-D PLC | No | Gary | The PLC that will be investigated. |
+|Click C0-10DD1E-D PLC | No | Gary | The PLC that will be investigated |
 |24v Power Cord | No | Gary | A cord to wire into the PLC to provide power |
 |Click Programming Software | No | Gary | The programming software to configure and interact with the Click PLC |
 |Click HMI Software| No | Gary | The HMI creation software to interact with the Click PLC |
