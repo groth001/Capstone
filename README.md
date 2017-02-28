@@ -55,9 +55,11 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
     - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
     - Controller contains mechanisms to prevent denial of service.
   
-4. As a maintenance technician, I want to have physical access to wire in new IO hardware.
+4. As a programmer/engineer, I want to retrieve diagnostic and error data to troubleshoot problems.
  - Acceptance Criteria:
-    - Controller construction allows for authorized personnel access to input/ouput wiring.
+    - Sending commands requires some sort of strong authentication mechanism.
+    - Controller contains mechanisms to prevent denial of service.
+    - Controller contains mechanisms to prevent diagnostic and error log data manipulation.
   
 5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.
  - Acceptance Criteria:
