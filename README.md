@@ -27,7 +27,7 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 
 |Risk name (value)  | Impact     | Likelihood | Description |
 |-------------------|------------|------------|-------------|
-|Destruction of device firmware(16) | 8 | 2 | Device could be passed bad parameters have the firmware damaged. Unknown at this time if it can be flashed with new firmware. |
+|Destruction of device firmware(16) | 8 | 2 | Device could be passed bad parameters that damages the firmware. Unknown at this time if it can be flashed with new firmware. |
 | Electrocution(18) | 9 | 2 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device |
 | Power Surge(24) | 8 | 3 | Device could be destroyed with  a powersurge. We must ensure that the PLC is connected to the correct power supply and that the PLC is connected to a surge protector. |
 | Dropping the device(24) | 8 | 3 | Device could be dropped and damaged. Mitigation is the design and building of some display to protect the device |
