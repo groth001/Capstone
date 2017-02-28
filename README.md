@@ -37,26 +37,32 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 ## Application Requirements
 
 ### User Stories
-1. As a programmer/engineer, I want to remote access the controller to download a new program.<br>
+1. As a programmer/engineer, I want to remote access the controller to download a new program.
   - Acceptance Criteria:  
     - Sending commands requires some sort of strong authentication mechanism. 
     - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
+    - Controller contains mechanisms to prevent denial of service.
 
-2. As a programmer/engineer, I want to remote access the controller to update hardware settings.<br>
+2. As a programmer/engineer, I want to remote access the controller to update hardware settings.
   - Acceptance Criteria:
     - Sending commands requires some sort of strong authentication mechanism. 
     - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
+    - Controller contains mechanisms to prevent denial of service.
 
-3. As a programmer/engineer, I want to remote access the controller to update the system time.<br>
+3. As a programmer/engineer, I want to remote access the controller to update the system time.
   - Acceptance Criteria:
     - Sending commands requires some sort of strong authentication mechanism. 
     - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
+    - Controller contains mechanisms to prevent denial of service.
   
-4. As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
+4. As a maintenance technician, I want to have physical access to wire in new IO hardware.
  - Acceptance Criteria:
+    - Controller construction allows for authorized personnel access to input/ouput wiring.
   
-5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
+5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.
  - Acceptance Criteria:
+    - Memory locations for variables mapped to HMI components are not writable by replaying commands.
+    - Controller contains mechanisms to prevent denial of service.
 
 ### Use-Misuse Diagram
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
