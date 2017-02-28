@@ -38,13 +38,19 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 
 ### User Stories
 1. As a programmer/engineer, I want to remote access the controller to download a new program.<br>
-  - Acceptance Criteria:
+  - Acceptance Criteria:  
+    - Sending commands requires some sort of strong authentication mechanism. 
+    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
 
 2. As a programmer/engineer, I want to remote access the controller to update hardware settings.<br>
   - Acceptance Criteria:
+    - Sending commands requires some sort of strong authentication mechanism. 
+    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
 
 3. As a programmer/engineer, I want to remote access the controller to update the system time.<br>
   - Acceptance Criteria:
+    - Sending commands requires some sort of strong authentication mechanism. 
+    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
   
 4. As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
  - Acceptance Criteria:
