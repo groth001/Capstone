@@ -1,7 +1,7 @@
 ## Executive Summary
 
 #### Problem Statement
-Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by AutomationDirect. Intelligence reports in recent years have indicated that attacks on Supervisory Control and Data Acquisition (SCADA) systems are continuing to increase [1]. These systems are used to automate processes of critical infrastructure for a nation that citizens directly depend on as well as in operational activities of many industries. The goal of these attacks is typically to cause physical damage by compromising the availability of the system. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. 
+Intelligence reports in recent years have indicated that attacks on Supervisory Control and Data Acquisition (SCADA) systems are continuing to increase [1]. These systems are used to automate processes of critical infrastructure for a nation that citizens directly depend on as well as in the operational activities of many industries. The goal of these attacks is typically to cause physical damage by compromising the availability of the system through program manipulation or denial of service. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. Research will focus on a Click C0-10DD1E-D PLC with Ethernet manufactured by Koyo Electronics Industries and sold by AutomationDirect. A programmable logic controller (PLC) contains the programming for a process and is responsible for its execution.  Due to its functionality within a SCADA system, it is a high value target for adversaries.  In using a published communications protocol, Modbus, a Click PLC is most likely susceptible to a variety of attacks.
 
 #### Objectives
 - Connect to the controller bypassing any authentication
@@ -15,7 +15,7 @@ Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by Autom
 #### Merits
 Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Successful attacks against the Click C0-10DD1E-D PLC can be documented and reported to the vendor, Koyo, to assist them in improving the security of their product. Knowledge of potential attacks will assist current users of the controller to protect their assets.  Successful testing scripts may be integrated into a new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals.
 
-###### References
+##### References
 [1] https://securityintelligence.com/news/annual-threat-report-pos-https-and-scada-attacks-on-the-rise/ <br>
 [2] https://ics-cert.us-cert.gov/alerts/IR-ALERT-H-16-056-01
 
@@ -27,36 +27,32 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 
 |Risk name (value)  | Impact     | Likelihood | Description |
 |-------------------|------------|------------|-------------|
-|Destruction of device firmware(16) | 8 | 2 | Device could be passed bad parameters have the software damaged. Unknown at this time if it can be flashed with new firmware. |
+|Destruction of device firmware(16) | 8 | 2 | Device could be passed bad parameters have the firmware damaged. Unknown at this time if it can be flashed with new firmware. |
 | Electrocution(18) | 9 | 2 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device |
-| Power Surge(24) | 8 | 3 | Device could be destroyed with  a powersurge. We must insure that the PLC is connected to the correct power supply and that the PLC is connected to a surge protector. |
+| Power Surge(24) | 8 | 3 | Device could be destroyed with  a powersurge. We must ensure that the PLC is connected to the correct power supply and that the PLC is connected to a surge protector. |
 | Dropping the device(24) | 8 | 3 | Device could be dropped and damaged. Mitigation is the design and building of some display to protect the device |
-| Theft of the PLC(32) | 8 | 4 | the device could be stolen if not secured. Mitigation controls include securing the device in the SCADA lab or in STEAL3 |
+| Theft of the PLC(32) | 8 | 4 | The device could be stolen if not secured. Mitigation controls include securing the device in the SCADA lab or in STEAL3 |
 
 
 ## Application Requirements
 
-- User Story 1<br>
-  As a programmer/engineer, I want to remote access the controller to download a new program.<br>
-  Acceptance Criteria: 
+### User Stories
+1. As a programmer/engineer, I want to remote access the controller to download a new program.<br>
+  - Acceptance Criteria:
 
-- User Story 2<br>
-  As a programmer/engineer, I want to remote access the controller to update hardware settings.<br>
-  Acceptance Criteria:
+2. As a programmer/engineer, I want to remote access the controller to update hardware settings.<br>
+  - Acceptance Criteria:
 
-- User Story 3<br>
-  As a programmer/engineer, I want to remote access the controller to update the system time.<br>
-  Acceptance Criteria:
+3. As a programmer/engineer, I want to remote access the controller to update the system time.<br>
+  - Acceptance Criteria:
   
-- User Story 4<br>
-  As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
-  Acceptance Criteria:
+4. As a maintenance technician, I want to have physical access to wire in new IO hardware.<br>
+ - Acceptance Criteria:
   
-- User Story 5<br>
-  As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
-  Acceptance Criteria:
+5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.<br>
+ - Acceptance Criteria:
 
-- Use-Misuse Diagram<br>
+### Use-Misuse Diagram
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
 
 ## Resources/Technology Needed
