@@ -1,17 +1,28 @@
 
-# PLC Hacking Capstone Project
+# PLC Hacking Capstone
 
-<b>Executive Project Summary</b><br>
-This project consists of developing attacks on a programmable logic controller, a device used to control a process in Supervisory Control and Data Acquistion (SCADA) systems. Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by AutomationDirect. Intelligence reports in the past few years have indicated that attacks on SCADA systems are continuing to increase [1]. These systems represent functions of critical infrastructure for a nation that citizens directly depend on. The goal of these attacks is typically to cause physical damage by compromising the availability of the system. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Any successful attacks and knowledge gained could be integrated into the new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals. Any serious vulnerabilities should be reported to the vendor.
+### Executive Summary
+=============================
+
+#### Problem Statement
+This project consists of developing attacks on a programmable logic controller, a device used to control a process in Supervisory Control and Data Acquistion (SCADA) systems. Research is being focused on a Click C0-10DD1E-D PLC with Ethernet sold by AutomationDirect. Intelligence reports in the past few years have indicated that attacks on SCADA systems are continuing to increase [1]. These systems represent functions of critical infrastructure for a nation that citizens directly depend on. The goal of these attacks is typically to cause physical damage by compromising the availability of the system. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. 
+
+#### Objectives
+
+
+#### Merits
+Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Successful attacks against the Click C0-10DD1E-D PLC can be documented and reported to the vendor, Koyo, to assist them in improving the security of their product. Knowledge of potential attacks will assist current users of the controller to protect their assets.  Developed testing scripts may be integrated into a new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals.
 
 References<br>
 [1] https://securityintelligence.com/news/annual-threat-report-pos-https-and-scada-attacks-on-the-rise/ <br>
 [2] https://ics-cert.us-cert.gov/alerts/IR-ALERT-H-16-056-01
 
-<b>Proposed Project Timeline</b>
+### Proposed Project Timeline
+====================================
 ![Alt text](/gantChart.PNG?raw=true "Project Timeline")
 
-<b>Project-oriented Risk List</b>
+### Project-oriented Risk List
+======================================
 
 |Risk name (value)  | Impact     | Likelihood | Description |
 |-------------------|------------|------------|-------------|
@@ -21,7 +32,8 @@ References<br>
 | Theft of the PLC(32) | 8 | 4 | the device could be stolen if not secured. Mitigation controls include securing the device in the SCADA lab or in STEAL3 |
 | Electrocution(81) | 9 | 9 | A person could be severely injured or killed by incorrectly connecting the PLC. Caution must be taken before changing configuration on the device |
 
-<b>Application Requirements</b>
+### Application Requirements
+===================================
 
 - User Story 1<br>
   As a programmer/engineer, I want to remote access the controller to download a new program.<br>
@@ -46,7 +58,8 @@ References<br>
 - Use-Misuse Diagram<br>
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
 
-<b>Resources/Technology Needed</b>
+### Resources/Technology Needed
+=======================================
 
 |Resource  | Dr. Hale needed? | Investigating Team member | Description |
 |----------|------------------|---------------------------|-------------|
@@ -57,5 +70,6 @@ https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff
 |Windows 7 Virtual Machine | No | Gary | The virtual environment to host the programming software |
 |Kali Linux Virtual Machine| No | Gary | The virtual environment from which to launch attack scripts |
 
-<b>Trello Board</b><br>
+### Trello Board
+=====================================
 https://trello.com/b/l3p1jstX/project-requirement-elicitation
