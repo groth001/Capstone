@@ -39,26 +39,21 @@ Understanding the weaknesses of SCADA equipment leads to a better understanding 
 ### User Stories
 1. As a programmer/engineer, I want to remote access the controller to download a new program.
   - Acceptance Criteria:  
-    - Sending commands requires some sort of strong authentication mechanism. 
+    - Controller authenicates requests to change programming. 
     - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
     - Controller contains mechanisms to prevent denial of service.
 
-2. As a programmer/engineer, I want to remote access the controller to update hardware settings.
+2. As a programmer/engineer, I want to securely update hardware settings to fit changing network requirements.
   - Acceptance Criteria:
-    - Sending commands requires some sort of strong authentication mechanism. 
-    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
-    - Controller contains mechanisms to prevent denial of service.
+    - Controller authenticates requests to change hardware settings
+    - Hardware settings data is encrypted during transmission
 
-3. As a programmer/engineer, I want to remote access the controller to update the system time.
+3. As a programmer/engineer, I want to set and send a password to authenicate and communicate securely.
   - Acceptance Criteria:
-    - Sending commands requires some sort of strong authentication mechanism. 
-    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
-    - Controller contains mechanisms to prevent denial of service.
+    - Password and subsequent data is encrypted in transit
   
 4. As a programmer/engineer, I want to retrieve diagnostic and error data to troubleshoot problems.
  - Acceptance Criteria:
-    - Sending commands requires some sort of strong authentication mechanism.
-    - Controller contains mechanisms to prevent denial of service.
     - Controller contains mechanisms to prevent diagnostic and error log data manipulation.
   
 5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.
