@@ -1,23 +1,17 @@
 ## Executive Summary
 
 #### Problem Statement
-Intelligence reports in recent years have indicated that attacks on Supervisory Control and Data Acquisition (SCADA) systems are continuing to increase [1]. These systems are used to automate processes of critical infrastructure for a nation that citizens directly depend on as well as in the operational activities of many industries. The goal of these attacks is typically to cause physical damage by compromising the availability of the system through program manipulation or denial of service. For example, on December 23, 2015, an attack on a Ukrainian power grid left around 225,000 residents without electricity, and call centers were flooded such that customers could not report the outages [2]. Research will focus on a Click C0-10DD1E-D PLC with Ethernet manufactured by Koyo Electronics Industries and sold by AutomationDirect. A programmable logic controller (PLC) contains the programming for a process and is responsible for its execution.  Due to its functionality within a SCADA system, it is a high value target for adversaries.  In using a published communications protocol, Modbus, a Click PLC is most likely susceptible to a variety of attacks.
+Organizations use industrial control systems, also referred to as Supervisory Control and Data Acquistion (SCADA) systems, to automate industrial processes that make their day-to-day operations possible.  The "brains" of these systems are programmable logic controllers, miniature computers, that run the programs to execute the processes.  Attacks are typically designed to target controllers to cause physical damage by compromising their functionality or availability.  This research focuses on the low-cost Click C0-10DD1E-D PLC manufactured by Koyo Electronics Industries and sold by AutomationDirect.  Low-cost controllers used by organizations with budget constraints typically lack security features of their more expensive counterparts. Objectives of this research is to develop network-based attacks including:
 
-#### Objectives
-- Connect to the controller bypassing any authentication
-- Force the controller to be in stop cpu mode in order to prevent program execution
-- Manipulate the system time settings on the controller
-- Manipulate variable values in the controller's program
-- Create a denial of service that prevents any communication to the controller
-- Fuzz the controller to produce unexpected behavior
-- Download a blank program to the controller without the programming software 
-
-#### Merits
-Understanding the weaknesses of SCADA equipment leads to a better understanding of how to reduce the risk of attacks. Successful attacks against the Click C0-10DD1E-D PLC can be documented and reported to the vendor, Koyo, to assist them in improving the security of their product. Knowledge of potential attacks will assist current users of the controller to protect their assets.  Successful testing scripts may be integrated into a new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals.
-
-##### References
-[1] https://securityintelligence.com/news/annual-threat-report-pos-https-and-scada-attacks-on-the-rise/ <br>
-[2] https://ics-cert.us-cert.gov/alerts/IR-ALERT-H-16-056-01
+  - Connect to the controller bypassing any authentication
+  - Force the controller to be in stop cpu mode in order to prevent program execution
+  - Manipulate the system time settings on the controller
+  - Manipulate variable values in the controller's program
+  - Create a denial of service that prevents any communication to the controller
+  - Fuzz the controller to produce unexpected behavior
+  - Download a blank program to the controller without the programming software 
+  
+Understanding the weaknesses of the Click C0-10DD1E-D PLC leads to a better understanding of how to reduce the risk of attacks. Successful attacks can be documented and reported to the vendor, Koyo, to assist them in improving the security of their product. Knowledge of potential attacks will assist current users of the controller to protect their assets.  Successful testing scripts may be integrated into a new SCADA security class being added at the University of Nebraska-Omaha's College of IS&T to train future security professionals.
 
 ## Proposed Project Timeline
 
