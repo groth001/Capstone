@@ -25,31 +25,52 @@ srcPort = random.randint(40000, 55000) # source port
 dstport = 25425 # port number of PLC
 
 # Packets to change IP settings from 192.168.0.101 to IP: 192.168.0.109, Subnet mask: 255.255.255.0, Gateway: 192.168.0.244
-setup = binascii.unhexlify("4b4f50000a0074610e0045016683c0a8006500d07c120e4d") # packet that prepares the PLC to receive new IP data
-change_ip = binascii.unhexlify("4b4f5000100043481d0045016682000100c0a80065c0a8006dffffff00c0a800f400d07c120e4d") # packet containing new IP data
+setup1 = binascii.unhexlify("4b4f50000a0074610e0045016683c0a8006500d07c120e4d") # packet that prepares the PLC to receive new IP data
+change_ip1 = binascii.unhexlify("4b4f5000100043481d0045016682000100c0a80065c0a8006dffffff00c0a800f400d07c120e4d") # packet containing new IP data
 
 # Packets to change IP settings from 192.168.0.109 to IP: 192.168.0.101, Subnet mask: 255.255.255.0, Gateway: 192.168.0.244
-#setup = binascii.unhexlify("4b4f50000a00d9f20e0045016683c0a8006d00d07c120e4d") # packet that prepares the PLC to receive new IP data
-#change_ip = binascii.unhexlify("4b4f5000100038ff1d0045016682000100c0a8006dc0a80065ffffff00c0a800f400d07c120e4d") # packet containing new IP data
+setup2 = binascii.unhexlify("4b4f50000a00d9f20e0045016683c0a8006d00d07c120e4d") # packet that prepares the PLC to receive new IP data
+change_ip2 = binascii.unhexlify("4b4f5000100038ff1d0045016682000100c0a8006dc0a80065ffffff00c0a800f400d07c120e4d") # packet containing new IP data
 
 # Bind socket and setup for broadcast (IP related packets are broadcasted to the whole LAN)
 sock.bind((srcIP, srcPort))
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-                                
-# Send setup packet and check result
-rec = sock.sendto(setup, ('<broadcast>', port))
-if binascii.hexlify(rec[6:]) == "1d280700450166c2100000":
-    print "Setup packet successful"
-else:
-    print "Setup packet failed"
-time.sleep(.5)
 
-# Send change IP packet and check result
-rec = sock.sendto(change_ip, ('<broadcast>', port))
-if binascii.hexlify(rec[6:]) == "763c0500450166c310":
-    print "Change IP packet successful"
-else:
-    print "Change IP packet failed"    
+print "1 - Change IP to 192.168.0.109"
+print "2 - Change IP to 192.168.0.101"
+choice = int(input("Enter choice: ")
+             
+if choice == 1:
+    # Send setup packet and check result
+    rec = sock.sendto(setup1, ('<broadcast>', port))
+    if binascii.hexlify(rec[6:]) == "1d280700450166c2100000":
+        print "Setup packet successful"
+    else:
+        print "Setup packet failed"
+    time.sleep(.5)
+
+    # Send change IP packet and check result
+    rec = sock.sendto(change_ip1, ('<broadcast>', port))
+    if binascii.hexlify(rec[6:]) == "763c0500450166c310":
+        print "Change IP packet successful"
+    else:
+        print "Change IP packet failed"
+
+elif choice == 2:
+    # Send setup packet and check result
+    rec = sock.sendto(setup2, ('<broadcast>', port))
+    if binascii.hexlify(rec[6:]) == "1d280700450166c2100000":
+        print "Setup packet successful"
+    else:
+        print "Setup packet failed"
+    time.sleep(.5)
+
+    # Send change IP packet and check result
+    rec = sock.sendto(change_ip2, ('<broadcast>', port))
+    if binascii.hexlify(rec[6:]) == "763c0500450166c310":
+        print "Change IP packet successful"
+    else:
+        print "Change IP packet failed"
 
 # Misc notes -------------------------------------------------------
 

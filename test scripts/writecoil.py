@@ -47,13 +47,15 @@ def send_packet(transID, packet):
 
     return sock.recv(4096) 
 
+print "1 - Turn fan on"
+print "2 - Turn fan off"
+choice = int(input("Enter choice: ")
+             
 # Establish TCP connection with PLC
 sock.connect((ip, port))
 
-# Turn fan on
-sockRec = send_packet(transID, build_packet(fanOn))
-
-time.sleep(5)
-
-# Turn fan off
-sockRec = send_packet(transID, build_packet(fanOff)
+# Send fan on or off command
+if choice == 1:
+    sockRec = send_packet(transID, build_packet(fanOn))
+elif choice == 2:
+    sockRec = send_packet(transID, build_packet(fanOff)
