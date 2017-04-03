@@ -77,6 +77,8 @@ https://trello.com/b/l3p1jstX/project-requirement-elicitation
 ### Architectural Diagram
 https://www.lucidchart.com/invitations/accept/d9a953e0-7dd6-427e-8d44-1d9d7f5d9fbf
 
+https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
+
 ### User Story – Communicating Securely
 
 #### Which components were tested in the architecture?
