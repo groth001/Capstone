@@ -71,3 +71,11 @@ https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff
 
 ## Trello Board
 https://trello.com/b/l3p1jstX/project-requirement-elicitation
+
+# Milestone 2
+
+### Architectural Diagram
+https://www.lucidchart.com/invitations/accept/d9a953e0-7dd6-427e-8d44-1d9d7f5d9fbf
+
+
+
