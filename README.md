@@ -6,6 +6,7 @@ Organizations use industrial control systems to automate processes that make the
   - Connect to the controller bypassing any authentication
   - Force the controller to be in stop cpu mode in order to prevent program execution
   - Manipulate the system time settings on the controller
+  - Manipulate the network settings on the controller
   - Manipulate variable values in the controller's program
   - Create a denial of service that prevents any communication to the controller
   - Fuzz the controller to produce unexpected behavior
@@ -31,29 +32,28 @@ Understanding the weaknesses of the Click C0-10DD1E-D PLC leads to a better unde
 ## Application Requirements
 
 ### User Stories
-1. As a programmer/engineer, I want to remote access the controller to download a new program.
-  - Acceptance Criteria:  
-    - Controller authenicates requests to change programming. 
-    - Intercepted traffic does not contain sensitive information and commands are not subject to replay attacks.
-    - Controller contains mechanisms to prevent denial of service.
+1. As a programmer/engineer, I want to set and send a password to authenicate and communicate securely.
+  - Acceptance Criteria:
+    - Password and subsequent data is encrypted in transit
 
 2. As a programmer/engineer, I want to securely update hardware settings to fit changing network requirements.
   - Acceptance Criteria:
     - Controller authenticates requests to change hardware settings
     - Hardware settings data is encrypted during transmission
 
-3. As a programmer/engineer, I want to set and send a password to authenicate and communicate securely.
-  - Acceptance Criteria:
-    - Password and subsequent data is encrypted in transit
+3. As a non-technical employee, I want to want to use an HMI or the programming software to interact with the program on the controller.
+ - Acceptance Criteria:
+    - Memory locations for variables are not writable by replaying commands.
+    - Controller contains mechanisms to prevent denial of service.
+
+4. As a non-technical employee, I want to put the controller cpu in run mode to for its programming to be executed.
+  - Acceptance Criteria:  
+    - Controller cpu mode cannot be manipulated.
   
-4. As a programmer/engineer, I want to retrieve diagnostic and error data to troubleshoot problems.
+5. As a programmer/engineer, I want to retrieve diagnostic and error data to troubleshoot problems.
  - Acceptance Criteria:
     - Controller contains mechanisms to prevent diagnostic and error log data manipulation.
   
-5. As a non-technical employee, I want to want to use an HMI to interact with the program on the controller.
- - Acceptance Criteria:
-    - Memory locations for variables mapped to HMI components are not writable by replaying commands.
-    - Controller contains mechanisms to prevent denial of service.
 
 ### Use-Misuse Diagram
 https://www.lucidchart.com/invitations/accept/c0173837-b4e0-4fa4-a2eb-2afb866eff68
