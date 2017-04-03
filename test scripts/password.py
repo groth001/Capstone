@@ -23,9 +23,10 @@ rec = None  # holds received data from the Click PLC
 srcIP = '192.168.0.20' # source IP address of sender
 srcPort = random.randint(40000, 55000) # source port
 dstIP = '192.168.0.101'
-dstport = 25425 # destination port
+dstPort = 25425 # destination port
 
 # Password packet with password set to "password"
+#password = binascii.unhexlify("4b4f50003500d56f07004d01430010000a")
 password = binascii.unhexlify("4b4f50001600e73913004d01470010000b0b020070617373776f726400")
 
 # Bind socket

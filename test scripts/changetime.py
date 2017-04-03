@@ -21,8 +21,9 @@ import random
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP socket to send data out
 rec = None  # holds received data from the Click PLC
 srcIP = '192.168.0.20' # source IP address of sender
+dstIP = '192.168.0.101' # destination IP address of PLC
 srcPort = random.randint(40000, 55000) # source port
-dstport = 25425 # port number of PLC
+dstPort = 25425 # port number of PLC
 
 changetime1 = binascii.unhexlify("4b4f50009400f87c12004d01470010000a0a01002134150711031700") # Sat March 11, 2017 at 3:34:21 pm
 changetime2 = binascii.unhexlify("4b4f50007b00bb9812004d01470010000a0a01005545100415031700") # Wed March 15, 2017 at 10:45:55 am
@@ -35,7 +36,7 @@ print "1 - March 11, 2017 at 3:34:21 pm"
 print "2 - March 15, 2017 at 10:45:55 am"
 print "3 - March 16, 2017 at 2:34:21 pm"
 
-choice = int(input("Enter choice: "))
+choice = int(raw_input("Enter choice: "))
 
 # Send a change time packet
 if choice == 1:

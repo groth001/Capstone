@@ -22,7 +22,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP socket to send dat
 rec = None  # holds received data from the Click PLC
 srcIP = '192.168.0.20' # source IP address of sender
 srcPort = random.randint(40000, 55000) # source port
-dstport = 25425 # port number of PLC
+dstPort = 25425 # port number of PLC
 
 # Packets to change IP settings from 192.168.0.101 to IP: 192.168.0.109, Subnet mask: 255.255.255.0, Gateway: 192.168.0.244
 setup1 = binascii.unhexlify("4b4f50000a0074610e0045016683c0a8006500d07c120e4d") # packet that prepares the PLC to receive new IP data
@@ -38,39 +38,24 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
 print "1 - Change IP to 192.168.0.109"
 print "2 - Change IP to 192.168.0.101"
-choice = int(input("Enter choice: ")
+choice = int(raw_input("Enter choice: "))
              
 if choice == 1:
     # Send setup packet and check result
-    rec = sock.sendto(setup1, ('<broadcast>', port))
-    if binascii.hexlify(rec[6:]) == "1d280700450166c2100000":
-        print "Setup packet successful"
-    else:
-        print "Setup packet failed"
+    sock.sendto(setup1, ('<broadcast>', dstPort))
     time.sleep(.5)
 
-    # Send change IP packet and check result
-    rec = sock.sendto(change_ip1, ('<broadcast>', port))
-    if binascii.hexlify(rec[6:]) == "763c0500450166c310":
-        print "Change IP packet successful"
-    else:
-        print "Change IP packet failed"
+    # Send change IP packet
+    sock.sendto(change_ip1, ('<broadcast>', dstPort))
 
 elif choice == 2:
     # Send setup packet and check result
-    rec = sock.sendto(setup2, ('<broadcast>', port))
-    if binascii.hexlify(rec[6:]) == "1d280700450166c2100000":
-        print "Setup packet successful"
-    else:
-        print "Setup packet failed"
+    sock.sendto(setup2, ('<broadcast>', dstPort))
     time.sleep(.5)
 
     # Send change IP packet and check result
-    rec = sock.sendto(change_ip2, ('<broadcast>', port))
-    if binascii.hexlify(rec[6:]) == "763c0500450166c310":
-        print "Change IP packet successful"
-    else:
-        print "Change IP packet failed"
+    sock.sendto(change_ip2, ('<broadcast>', dstPort))
+  
 
 # Misc notes -------------------------------------------------------
 
