@@ -80,4 +80,25 @@ https://www.lucidchart.com/invitations/accept/d9a953e0-7dd6-427e-8d44-1d9d7f5d9f
 ### Activity Diagram
 https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
 
+### User Story 1 Testing
+#### Test Case: Secure Communication
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/secureCommunication.md)
 
+[Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/password.py)
+
+### User Story 2 Testing
+#### Test Case: Network Settings
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/Network%20Settings.md)
+
+[Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/changeip.py)
+
+#### Test Case: Time Settings
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/Time%20Settings.md)
+
+[Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/changetime.py)
+
+### User Story 3 Testing
+#### Test Case: Memory Manipulation
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/Memory%20Manipulation.md)
+
+[Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/writecoil.py)
