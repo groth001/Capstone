@@ -1,7 +1,7 @@
 ## User Story 4: Denial of Service
 
 #### Component Focus
-This assessment test focuses on the Click C0-10DD1E-D PLC's cpu mode.
+This assessment test focuses on the Click C0-10DD1E-D PLC's cpu.
 
 #### Purpose
 This assessment test checks to verify if it is possible to force the cpu to be in stop mode while preventing a legitmate user from returning it to run mode.
