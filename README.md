@@ -116,4 +116,5 @@ https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
 
 ### User Story 5 Testing
 #### Test Case: Password Attempt Logging
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/LoggingMechanisms.md)
 
