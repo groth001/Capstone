@@ -102,3 +102,19 @@ https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
 [Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/Memory%20Manipulation.md)
 
 [Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/writecoil.py)
+
+
+# Milestone 3
+
+### Activity Diagram
+https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
+
+### User Story 4 Testing
+#### Test Case: Stop CPU Flood Attack
+[Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/denialOfService.md)
+
+[Test Script](https://github.com/groth001/Capstone/blob/master/test%20scripts/cpumode.py)
+
+### User Story 5 Testing
+#### Test Case: Password Attempt Logging
+
