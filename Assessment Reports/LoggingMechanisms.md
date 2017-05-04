@@ -8,11 +8,11 @@ The purpose of the test was to determine if we could identify an intrusion, base
 PLC logs.  
 
 #### Testing Procedure 
-The CLICK PLC has an option to log asswords. We enabled this setting through the programing 
+The CLICK PLC has an option to log passwords. We enabled this setting through the programming 
 software. We then ran a variety of tests on this logging mechanism. We tried to log in with correct and 
 incorrect credentials both through the programming software and through python scripts. After 
-completing these tasks, we checked the log data to see what was recorded. This appeared to be the only s
-ecurity relevant logging mechanism, so no additional tests were conducted.
+completing these tasks, we checked the log data to see what was recorded. This appeared to be the only security 
+relevant logging mechanism, so no additional tests were conducted.
 
 #### Testing Results
 The logging mechanism only records the last sixteen incorrect passwords attempts. For each attempt, 
@@ -24,5 +24,5 @@ the password without having to replay any commands.
 
 Incorrect attempts sent programmatically using the replay attack are not shown. This is likely because 
 the programming software sends another command to the PLC when an incorrect password is entered. 
-This script does not send this command. This is an issues as it makes brute force attempts impossible to 
+This script does not send this command. This is an issue as it makes brute force attempts impossible to 
 detect from the PLC itself. 
