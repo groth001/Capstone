@@ -41,3 +41,11 @@ It then becomes a matter of what this is connected to. If its coffee machines or
 | 3. I/O Devices | [Memory Manipulation](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/Memory%20Manipulation.md) | Variables in memory should not be able to be maipulated to the status of an I/O device | Failed |
 | 4. Denial of Service | [Stop CPU Flood](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/denialOfService.md) | The controller should have mechanisms to prevent a denial of service attack | Failed |
 | 5. Logging Mechanisms | [Password Logging](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/LoggingMechanisms.md) | The controller should log all attempts to enter passwrods | Failed |
+
+#### Artifacts
+
+##### [Testing Scripts](https://github.com/groth001/Capstone/tree/master/test%20scripts)
+
+##### [Architectural Diagram](https://www.lucidchart.com/invitations/accept/d9a953e0-7dd6-427e-8d44-1d9d7f5d9fbf)
+
+##### [Activity Diagrams](https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#)
