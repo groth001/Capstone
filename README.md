@@ -105,8 +105,7 @@ https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
 
 # Milestone 3
 
-### Activity Diagram
-https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
+### [Activity Diagrams](https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#)
 
 ### User Story 4 Testing
 #### Test Case: Stop CPU Flood Attack
@@ -118,5 +117,10 @@ https://www.lucidchart.com/documents/edit/c4497c3b-4cea-4afe-941b-a1c6e8d6f948#
 #### Test Case: Password Attempt Logging
 [Report](https://github.com/groth001/Capstone/blob/master/Assessment%20Reports/LoggingMechanisms.md)
 
-### [Final Report](https://github.com/groth001/Capstone/blob/master/Results/Final%20Report.md)
+### Results
+[Assessment & Threat Landscape Summaries](https://github.com/groth001/Capstone/blob/master/Results/Assessment%20Activities%20%26%20Threat%20Landscape.md)
+
+[Assessment Findings](https://github.com/groth001/Capstone/blob/master/Results/Assessment%20Findings.md)
+
+[Final Report](https://github.com/groth001/Capstone/blob/master/Results/Final%20Report.md)
 
