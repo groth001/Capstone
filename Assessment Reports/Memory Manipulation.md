@@ -1,4 +1,4 @@
-## User Story 3: Program Interaction
+## User Story 3: Memory Manipulation
 
 #### Component Focus
 This assessment test focuses on the Click C0-10DD1E-D PLC's memory.
